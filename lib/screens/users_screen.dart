@@ -57,7 +57,7 @@ class _UsersScreenState extends State<UsersScreen> {
                       StoryWidget(
                         name: null,
                         image: null,
-                        isme: true,
+                        isMe: true,
                       ),
 
                       ...users
@@ -66,7 +66,7 @@ class _UsersScreenState extends State<UsersScreen> {
                         return StoryWidget(
                           name: user['name'],
                           image: user['image'],
-                          isme: false,
+                          isMe: false,
                         );
                       }).toList(),
                     ],

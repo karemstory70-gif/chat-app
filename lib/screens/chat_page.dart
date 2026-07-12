@@ -17,11 +17,13 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
-  final messagecontroller = TextEditingController();
+  final messageController = TextEditingController();
+
   final auth = AuthServices();
   void sendMessage() async {
-    if (messagecontroller.text.trim().isEmpty) 
+    if (messageController.text.trim().isEmpty){
     return;
+    }
     String currentUserId = auth.currentUser!.uid;
     List<String> ids = [currentUserId, widget.reciverId];
     ids.sort();
@@ -33,10 +35,10 @@ class _ChatPageState extends State<ChatPage> {
         .add({
           "senderId": currentUserId,
           "receiverId": widget.reciverId,
-          "message": messagecontroller.text.trim(),
+          "message": messageController.text.trim(),
           "timestamp": FieldValue.serverTimestamp(),
         });
-    messagecontroller.clear();
+    messageController.clear();
   }
 
   @override
@@ -138,7 +140,7 @@ class _ChatPageState extends State<ChatPage> {
 
                 Expanded(
                   child: TextField(
-                    controller: messagecontroller,
+                    controller: messageController,
                     maxLines: null,
                     minLines: 1,  
                     decoration: const InputDecoration(

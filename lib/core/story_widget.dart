@@ -2,12 +2,12 @@ import 'package:chatapp_task/core/app_color.dart';
 import 'package:flutter/material.dart';
 class StoryWidget extends StatelessWidget {
   StoryWidget({
-    super.key, required this.image , required this.isme, this.name
+    super.key, required this.image , required this.isMe, this.name
   });
 
   final String? name;
   final String? image;
-   bool isme;
+   bool isMe;
 
 
   @override
@@ -26,7 +26,7 @@ class StoryWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 border: Border.all(
                     color:
-                     isme
+                     isMe
                     ? Colors.grey.shade500
                     : AppColor.primrey,
                     width: 2
@@ -34,7 +34,7 @@ class StoryWidget extends StatelessWidget {
             ),
             child:
 
-            isme
+            isMe
             ?Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
@@ -60,7 +60,7 @@ class StoryWidget extends StatelessWidget {
           ),
           SizedBox(height: 2,),
           Text(
-            isme
+            isMe
             ?'Your Story'
             : name!
             , style: TextStyle(fontSize: 10),)
