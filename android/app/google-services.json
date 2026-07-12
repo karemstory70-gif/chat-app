@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "711408185577",
+    "project_id": "anaelmumin",
+    "storage_bucket": "anaelmumin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711408185577:android:33fdefcff36902c24c4078",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJQI3ZY6JIsFsj1fDQZD71YnBBQkGNEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711408185577:android:a9579d0f7b8805264c4078",
+        "android_client_info": {
+          "package_name": "com.example.chatapp_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJQI3ZY6JIsFsj1fDQZD71YnBBQkGNEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711408185577:android:09a520f42ecba9ef4c4078",
+        "android_client_info": {
+          "package_name": "com.example.flutter11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJQI3ZY6JIsFsj1fDQZD71YnBBQkGNEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
